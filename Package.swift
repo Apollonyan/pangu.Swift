@@ -20,5 +20,5 @@ let package = Package(
             dependencies: ["Pangu-Swift"],
             path: "Tests")
     ],
-    swiftLanguageVersions: [4]
+    swiftLanguageVersions: [4, 5]
 )

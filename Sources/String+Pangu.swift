@@ -32,7 +32,7 @@ public extension String {
     }
 
     /// text with paranoid text spacing
-    public var spaced: String {
+    var spaced: String {
 
         var result = self
         result = result.passWithRule((PanguRegex.cjk_quote, "$1 $2"))
