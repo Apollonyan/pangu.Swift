@@ -28,7 +28,7 @@ public extension String {
     private func passWithRule(_ rule: (NSRegularExpression, String)) -> String {
         return rule.0.stringByReplacingMatches(
             in: self, options:[],
-            range: NSMakeRange(0, self.count), withTemplate: rule.1)
+            range: NSRange(startIndex..<endIndex, in: self), withTemplate: rule.1)
     }
 
     /// text with paranoid text spacing
